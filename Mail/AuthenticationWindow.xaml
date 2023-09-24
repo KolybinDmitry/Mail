@@ -1,0 +1,21 @@
+﻿<Window x:Class="Mail.AuthenticationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Авторизация" Height="300" Width="400">
+    <Grid>
+        <Label Content="Email:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,30,0,0"/>
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="100,30,0,0"/>
+
+        <Label Content="Пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,70,0,0"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="100,70,0,0"/>
+
+        <Label Content="Сервис:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,110,0,0"/>
+        <ComboBox x:Name="ServiceComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="100,110,0,0">
+            <ComboBoxItem Content="Mail.ru"/>
+            <ComboBoxItem Content="Yandex.ru"/>
+            <ComboBoxItem Content="Rambler.ru"/>
+        </ComboBox>
+
+        <Button Content="Войти" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="150,150,0,0" Click="LoginButton_Click"/>
+    </Grid>
+</Window>
